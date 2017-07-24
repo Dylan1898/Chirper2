@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <ul>
+  <li><a class="active" href="#/">Home</a></li>
+  <li><a href="#list">List</a></li>
+  <li><a href="#users">Users</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+   <a href= '#list'> <h1 class='chirper'>Chirper!</h1></a> 
+  <div class='view'ng-view></div>
+     <div class='sidebar' ng-controller="UserController"> 
+
+   <select class='drop'>
+  <option value="Users">Users</option>
+  <a  href='#single' >
+  <option ng-click="goToUser(chirps.user)" ng-repeat='users in allUsers'>{{users}}</option>
+</a>
+
+</select>   
+  </div>
+
+<a href='#users'>
+    <h1>adhfalsdjl</h1>
+  </a>
+  <div ng-controller="allGetController">
+    
+    <button type="widget" class="btn-info" data-toggle="collapse" data-target="#demo">CHIRP!</button>
+    <form id='demo' class='collapse'>
+      <p class='inputprompt'>User:</p> <input class='box' type="text" name="User" placeholder="User" ng-model="user" required>
+      <p class='inputprompt'>Message:</p>
+      <input class='box message' type="text" name="Message" placeholder="Message" ng-model="message" required><br>
+      <input class='submitbutton' type="button" value="Submit" ng-click="insertdata()" />
+    </form>
+  </div>
+  <script src="app/app.js"></script>
+</body>
+
+</html>

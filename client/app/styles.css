@@ -1,0 +1,306 @@
+/* ----------------------------GENERAL-------------------------------------- */
+body{
+     background-color: rgba(255,255,255,0.1);
+     background-image: url( http://0.tqn.com/d/graphicssoft/1/7/l/G/5/SKS-Circles-16.png);
+      position: relative; 
+}  
+.view{
+        left: 27%;
+    position: sticky;
+}
+.sidebar{
+    width: 15%;
+    background: teal;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: teal;
+    position: fixed;
+    width: 100%;
+    top:0%;
+    z-index: 10;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ffa500;
+}
+.drop{
+        position: fixed;
+    top: 10%;
+    width: 10%;
+    left: 1%;
+}
+form#demo{
+        position: fixed;
+    bottom: 3%;
+margin-left: 65%;
+height:40%;
+width:27%
+}   
+.box{
+   width: 99%;
+}
+.message{
+    height: 36%;
+    
+}
+.btn-info{
+    position:fixed;
+    bottom:0;
+    width:25%;
+    margin-left: 65.2%;
+}
+.demo{
+    
+    bottom:0;
+}
+.messagetext{
+    margin-left: 3%;
+    word-wrap: break-word; 
+    background-color: white;
+    border-radius: 5px 5px;
+    padding: 1%;
+    background-color: rgba(175,238,238,0.7);
+    border-radius: 10px 10px;
+    border-left: 5px solid teal;
+}
+.messagetext:first-letter{
+  font-size: 2em;
+  font-style: italic;
+}
+p{
+    font-size: 1.5em;
+    color:teal;
+}
+a:link{
+    text-decoration: none;
+}
+p.user{
+    display: inline;
+    border-radius: 5px 5px;
+    color:#ffa500
+}
+p.message{
+    max-width: 80%;
+    color:#ffa500
+}
+hr.line{
+    transform: translate(-376px, 51px);
+color: #ffa500;
+    height: 0px; 
+    border: 5px solid #ffa500;
+    border-radius: 7px 9px;
+    width:55%;
+    display:block
+}
+.username{
+   background-color: rgba(175,238,238,0.7);
+    display:inline; 
+   padding:.5%;
+   border-radius: 5px 5px;
+}
+
+/* --------------------------------HOMEPAGE----------------------------------------- */
+
+.welcome{
+    display: inline;
+    font-size: 3em;
+    color: #ffa500; 
+}
+.title{
+    display: inline;
+    clear:right;
+    font-size: 1100% 
+} 
+
+img{
+    border: 10px solid turquoise;
+    -ms-transform-origin-x: 1em;
+    margin-right: 1em;
+    margin-left:13em;
+    margin-top:5em;
+    margin-bottom: 2em;
+    clear:both;
+    border-radius: 500px;
+    height:40%;
+    width:35%;
+      box-shadow: 
+	   0 0 0 2px #000,  
+	 0 0 0 3px #999,  
+	0 0 0 9px #fa0,
+	  0 0 0 10px #666,  
+	0 0 0 16px #fd0,
+	  0 0 0 18px #000;    
+}    
+.homebut{
+    display: block;
+    border-radius: 30px 30px;
+    font-size: 2em;
+    background-color:rgba(175,238,238,1);
+    color: teal;
+    transform: translate(410%, -430%);
+}
+div.home{
+    background-color: teal;
+    margin-top: 3em;
+    border-bottom: 4px solid turquoise;
+    border-top:4px solid turquoise;
+    width:100%;
+    box-shadow: 
+	   0 0 0 2px #000,  
+	 0 0 0 3px #999,  
+	0 0 0 9px #fa0,
+	  0 0 0 10px #666,  
+	0 0 0 16px #fd0,
+	  0 0 0 18px #000;    
+}
+.greeting{
+    float:right;
+    /* margin-right: 25%;
+    margin-top: 5%; */
+    color: #ffa500;
+    transform: translate(-55% ,40%)
+}
+
+/* -----------------------------------LISTPAGE------------------------------------- */
+
+h3#list{
+    text-align: center;
+    margin:0 auto;
+    color:#ffa500;
+    font-size: 3em;   
+}
+
+h1.chirper{
+    margin:2% auto;
+    text-align: center;
+    font-size: 10em;
+    color: #ffa500;
+    text-shadow: 5px 5px teal;
+
+
+}
+div.chirp:hover{
+    background-color: rgba(77, 182, 172,1)}
+div.chirp{
+    background-color: teal;
+    max-width: 60%;
+    margin:1% auto;
+    padding: 2%;
+    border-radius: 30px 10px;
+    background-color: rgba(77, 182, 172,0.7);
+    border-left: 10px solid #ffa500
+   
+}
+form{
+    padding:1em;
+    max-width: 90%;
+    border-radius: 30px 10px;
+    background-color: rgba(175,238,238,0.7);
+    margin: 0 auto;
+}
+input{
+    margin:1%
+}
+.input{
+    padding: 1em 1em;
+    text-align: center;
+    max-width: 80%;
+    margin: 1% auto;
+    border-radius: 30px 10px;
+    background-color: rgba(77, 182, 172,0.7);
+        border-bottom: 7px solid teal;
+}
+.inputprompt{
+    /* display:inline */
+}
+.submitbutton{
+    margin:1% -1%;
+    border-radius: 10px 10px;
+    padding: .8%;
+    font-size: 1.2em;
+    background-color: teal;
+    width:8%;
+    bottom:3%;
+    position: fixed;
+        transform: translate(111%,1%);
+}
+}
+.chirplist{
+    margin: 0 50%;
+}
+h4{
+    float:right;
+    font-size: 6em;
+    color: #ffa500;
+    transform: translate(23px, -51px);
+}
+img.tiny{
+    transform: translate(-282% ,-10%);
+width:93.1px;
+height:62.5px;
+margin-top:0;
+border: 5px solid turquoise;
+}
+user/name{
+     transform: translate(-282% ,-72%);
+}
+/* ------------------------------------SINGLEPAGE--------------------------------------- */
+
+.return{
+    text-align: center;
+    text-decoration: none;
+    color:#ffa500;
+}
+.singlechirp:hover{
+    background-color: rgba(77, 182, 172,1)
+}
+.singlechirp{
+    background-color: teal;
+    margin-top: 4%;
+    max-width: 80%;
+    margin:2% auto;
+    padding:2%;
+    border-radius: 30px 10px;
+    background-color: rgba(77, 182, 172,0.7);
+    border-left: 10px solid #ffa500
+}
+.small{
+    width:183px;
+    height:125px;
+    transform: translate(-9% ,-6%);
+    float:left
+}
+.deletethischirp{
+    margin:0 auto;
+    float:right;
+    font-size: .9em
+}
+/* ------------------------ALLUSERS---------------------- */
+.allUsers{
+    text-align: center;
+    margin:0 auto
+}
+h2{
+    font-size: 225%
+}

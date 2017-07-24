@@ -1,0 +1,10 @@
+  <div ng-controller="UserController">
+      <h3 id='list'>Users</h3>
+    <div class=' allUsers chirp' ng-repeat='users in allUsers'>
+        <a ng-click="goToUser(users)"  href='#user'
+        id={{users.user}}>
+            <h2>{{users}}</h2> </a>
+            
+</div>  
+    </div>
+ 

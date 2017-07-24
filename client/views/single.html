@@ -1,0 +1,13 @@
+<img class='small' src="http://i0.kym-cdn.com/photos/images/newsfeed/000/687/093/6a8.jpg">
+<div class='singlechirp' ng-controller="oneController">
+    <div ng-dblclick="deleteSingle(thisChirp.id)">
+    <p class='user'>USER: </p>
+    <p class='username'>{{thisChirp.user}}</p>
+    <p class='message'>CHIRP!: </p>
+    <p class='messagetext'>{{thisChirp.message}}</p>
+    <p class='deletethischirp'> Double click to delete this Chirp!</p>
+</div>
+</div>
+<a href='#list'>
+    <p class='return'>Return to Recent Chirps</p>
+</a>
