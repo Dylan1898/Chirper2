@@ -11,38 +11,35 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-  <ul>
-  <li><a class="active" href="#/">Home</a></li>
-  <li><a href="#list">List</a></li>
-  <li><a href="#users">Users</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-   <a href= '#list'> <h1 class='chirper'>Chirper!</h1></a> 
-  <div class='view'ng-view></div>
-     <div class='sidebar' ng-controller="UserController"> 
+<body class='grad1'>
+  <div>
+    <ul div>
+      <li><a class="active" href="#/">Home</a></li>
+      <li><a href="#list">List</a></li>
+      <li><a href="#users">Users</a></li>
+    </ul>
+    <a href='#list'>
+      <h1 class='chirper'>Chirper!</h1>
+    </a>
+    <div class='view' ng-view></div>
+    <div class='sidebar' ng-controller="UserController">
 
-   <select class='drop'>
-  <option value="Users">Users</option>
-  <a  href='#single' >
-  <option ng-click="goToUser(chirps.user)" ng-repeat='users in allUsers'>{{users}}</option>
+      <select class='drop' onchange="handleSelect(this)">
+  <option >Users</option>
+  <option ng-repeat='users in allUsers'>{{users}}</option>
 </a>
+</select>
+    </div>
 
-</select>   
-  </div>
-
-<a href='#users'>
-    <h1>adhfalsdjl</h1>
-  </a>
-  <div ng-controller="allGetController">
-    
-    <button type="widget" class="btn-info" data-toggle="collapse" data-target="#demo">CHIRP!</button>
-    <form id='demo' class='collapse'>
-      <p class='inputprompt'>User:</p> <input class='box' type="text" name="User" placeholder="User" ng-model="user" required>
-      <p class='inputprompt'>Message:</p>
-      <input class='box message' type="text" name="Message" placeholder="Message" ng-model="message" required><br>
-      <input class='submitbutton' type="button" value="Submit" ng-click="insertdata()" />
-    </form>
+    <div ng-controller="allGetController">
+      <button type="widget" class="btn-info" data-toggle="collapse" data-target="#demo">CHIRP!</button>
+      <form novalidate id='demo' class='collapse'>
+        <p class='inputprompt'>User:</p> <input required class='box' type="text" name="User" placeholder="User" ng-model="user">
+        <p class='inputprompt'>Message:</p>
+        <input required class='box message' type="text" name="Message" placeholder="Message" ng-model="message"><br>
+        <input class='submitbutton' type="button" value="Submit" ng-click="insertdata()" />
+      </form>
+    </div>
   </div>
   <script src="app/app.js"></script>
 </body>

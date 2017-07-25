@@ -1,23 +1,25 @@
 /* ----------------------------GENERAL-------------------------------------- */
-body{
-     background-color: rgba(255,255,255,0.1);
-     background-image: url( http://0.tqn.com/d/graphicssoft/1/7/l/G/5/SKS-Circles-16.png);
-      position: relative; 
-}  
+ 
+     .grad1 {
+    background: turquoise; 
+    background: -webkit-linear-gradient(left top,  turquoise,teal); 
+    background: -o-linear-gradient(bottom right,  turquoise, teal); 
+    background: -moz-linear-gradient(bottom right turquoise, teal); 
+    background: linear-gradient(to bottom right,  turquoise, teal);
+} 
 .view{
-        left: 27%;
+    left: 27%;
     position: sticky;
 }
 .sidebar{
-    width: 15%;
+    width: 11.9%;
     background: teal;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0;
-
 }
-    ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,34 +30,33 @@ body{
     top:0%;
     z-index: 10;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 4.4em;
     text-decoration: none;
 }
-
 li a:hover {
     background-color: #ffa500;
+    color:teal
 }
 .drop{
-        position: fixed;
+    position: fixed;
     top: 10%;
     width: 10%;
     left: 1%;
+    height:3%
 }
 form#demo{
-        position: fixed;
-    bottom: 3%;
-margin-left: 65%;
-height:40%;
-width:27%
+    position: fixed;
+    bottom: 1%;
+    margin-left: 65.2%;
+    height:40%;
+    width:25%;
 }   
 .box{
    width: 99%;
@@ -69,9 +70,11 @@ width:27%
     bottom:0;
     width:25%;
     margin-left: 65.2%;
-}
+    height:5%;
+    border-radius: 200% 200% 0% 0%;
+    z-index: 1
+ }
 .demo{
-    
     bottom:0;
 }
 .messagetext{
@@ -85,8 +88,8 @@ width:27%
     border-left: 5px solid teal;
 }
 .messagetext:first-letter{
-  font-size: 2em;
-  font-style: italic;
+    font-size: 2em;
+    font-style: italic;
 }
 p{
     font-size: 1.5em;
@@ -106,7 +109,7 @@ p.message{
 }
 hr.line{
     transform: translate(-376px, 51px);
-color: #ffa500;
+    color: #ffa500;
     height: 0px; 
     border: 5px solid #ffa500;
     border-radius: 7px 9px;
@@ -115,7 +118,7 @@ color: #ffa500;
 }
 .username{
    background-color: rgba(175,238,238,0.7);
-    display:inline; 
+   display:inline; 
    padding:.5%;
    border-radius: 5px 5px;
 }
@@ -137,20 +140,20 @@ img{
     border: 10px solid turquoise;
     -ms-transform-origin-x: 1em;
     margin-right: 1em;
-    margin-left:13em;
+    margin-left:20em;
     margin-top:5em;
     margin-bottom: 2em;
     clear:both;
     border-radius: 500px;
     height:40%;
     width:35%;
-      box-shadow: 
-	   0 0 0 2px #000,  
-	 0 0 0 3px #999,  
+    box-shadow: 
+	0 0 0 2px #000,  
+	0 0 0 3px #999,  
 	0 0 0 9px #fa0,
-	  0 0 0 10px #666,  
+	0 0 0 10px #666,  
 	0 0 0 16px #fd0,
-	  0 0 0 18px #000;    
+	0 0 0 18px #000;    
 }    
 .homebut{
     display: block;
@@ -158,7 +161,9 @@ img{
     font-size: 2em;
     background-color:rgba(175,238,238,1);
     color: teal;
-    transform: translate(410%, -430%);
+    transform: translate(184%, -368%);
+    width: 30%;
+    padding: 1% 1%;
 }
 div.home{
     background-color: teal;
@@ -167,12 +172,12 @@ div.home{
     border-top:4px solid turquoise;
     width:100%;
     box-shadow: 
-	   0 0 0 2px #000,  
-	 0 0 0 3px #999,  
+	0 0 0 2px #000,  
+	0 0 0 3px #999,  
 	0 0 0 9px #fa0,
-	  0 0 0 10px #666,  
+	0 0 0 10px #666,  
 	0 0 0 16px #fd0,
-	  0 0 0 18px #000;    
+	0 0 0 18px #000;    
 }
 .greeting{
     float:right;
@@ -192,13 +197,11 @@ h3#list{
 }
 
 h1.chirper{
-    margin:2% auto;
+    margin:4% auto;
     text-align: center;
     font-size: 10em;
     color: #ffa500;
     text-shadow: 5px 5px teal;
-
-
 }
 div.chirp:hover{
     background-color: rgba(77, 182, 172,1)}
@@ -229,7 +232,7 @@ input{
     margin: 1% auto;
     border-radius: 30px 10px;
     background-color: rgba(77, 182, 172,0.7);
-        border-bottom: 7px solid teal;
+    border-bottom: 7px solid teal;
 }
 .inputprompt{
     /* display:inline */
@@ -241,11 +244,11 @@ input{
     font-size: 1.2em;
     background-color: teal;
     width:8%;
-    bottom:3%;
+    bottom:6    ;
     position: fixed;
-        transform: translate(111%,1%);
+    transform: translate(111%,1%);
 }
-}
+
 .chirplist{
     margin: 0 50%;
 }
@@ -256,11 +259,11 @@ h4{
     transform: translate(23px, -51px);
 }
 img.tiny{
-    transform: translate(-282% ,-10%);
-width:93.1px;
-height:62.5px;
-margin-top:0;
-border: 5px solid turquoise;
+    transform: translate(-394% ,-10%);
+    width:93.1px;
+    height:62.5px;
+    margin-top:0;
+    border: 5px solid turquoise;
 }
 user/name{
      transform: translate(-282% ,-72%);
@@ -303,4 +306,29 @@ user/name{
 }
 h2{
     font-size: 225%
+}
+/* USER */
+.tinyuser{
+    transform: translate(86% ,258%);
+    width: 93.1px;
+    height: 62.5px;
+    margin-top: 0;
+    border: 5px solid turquoise;
+}
+
+
+div.chirp#userchirp{
+    background-color: teal;
+    max-width: 60%;
+    margin:-2% auto;
+    padding: 2%;
+    border-radius: 30px 10px;
+    background-color: rgba(77, 182, 172,0.7);
+    border-left: 10px solid #ffa500
+}
+#returnuser{
+    margin: 67px auto;
+}
+#userdelete{
+    transform: translate(54px, -78px);
 }

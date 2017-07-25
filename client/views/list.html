@@ -1,13 +1,4 @@
 <div ng-controller="allGetController">
-
-    <!-- <div class='input'> -->
-        <!-- <form>
-            <p class='inputprompt'>User:</p> <input class='box' type="text" name="User" placeholder="User" ng-model="user" required>
-            <p class='inputprompt'>Message:</p>
-            <input class='box' type="text" name="Message" placeholder="Message" ng-model="message" required><br>
-            <input class='submitbutton' type="button" value="Submit" ng-click="insertdata()" />
-        </form> -->
-    <!-- </div> -->
     <h3 id='list' class="h1list">Recent Chirps!</h3>
     <div>
         <div class='chirp' ng-repeat='chirps in allChirps' id={{chirp.id}}>
