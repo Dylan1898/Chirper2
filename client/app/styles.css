@@ -204,15 +204,23 @@ h1.chirper{
     text-shadow: 5px 5px teal;
 }
 div.chirp:hover{
-    background-color: rgba(77, 182, 172,1)}
+    /* background-color: rgba(77, 182, 172,1)} */
+    background-color: black;
+    border-right: 10px solid #ffa500;
+}
 div.chirp{
     background-color: teal;
     max-width: 60%;
     margin:1% auto;
     padding: 2%;
     border-radius: 30px 10px;
-    background-color: rgba(77, 182, 172,0.7);
-    border-left: 10px solid #ffa500
+    /* background-color: rgba(77, 182, 172,0.7); */
+    border-left: 10px solid #ffa500;
+    background: turquoise; 
+    background: -webkit-linear-gradient(left top,  teal,rgba(64,224,208, 0.7)); 
+    background: -o-linear-gradient(bottom right,  teal, rgba(64,224,208, 0.7)); 
+    background: -moz-linear-gradient(bottom right teal, rgba(64,224,208,0.7 )); 
+    background: linear-gradient(to bottom right,  teal, rgba(64,224,208 , 0.7));
    
 }
 form{
@@ -276,7 +284,7 @@ user/name{
     color:#ffa500;
 }
 .singlechirp:hover{
-    background-color: rgba(77, 182, 172,1)
+    background-color:black
 }
 .singlechirp{
     background-color: teal;
@@ -285,8 +293,13 @@ user/name{
     margin:2% auto;
     padding:2%;
     border-radius: 30px 10px;
-    background-color: rgba(77, 182, 172,0.7);
-    border-left: 10px solid #ffa500
+    /* background-color: rgba(77, 182, 172,0.7); */
+    border-left: 10px solid #ffa500;
+    background: turquoise; 
+    background: -webkit-linear-gradient(left top,  teal,rgba(64,224,208, 0.7)); 
+    background: -o-linear-gradient(bottom right,  teal, rgba(64,224,208, 0.7)); 
+    background: -moz-linear-gradient(bottom right teal, rgba(64,224,208,0.7 )); 
+    background: linear-gradient(to bottom right,  teal, rgba(64,224,208 , 0.7));
 }
 .small{
     width:183px;
@@ -309,26 +322,32 @@ h2{
 }
 /* USER */
 .tinyuser{
-    transform: translate(86% ,258%);
+    transform: translate(67% ,258%);
     width: 93.1px;
     height: 62.5px;
     margin-top: 0;
     border: 5px solid turquoise;
 }
 
-
+div.chirp#userchirp:hover{
+    background-color: black
+}
 div.chirp#userchirp{
     background-color: teal;
     max-width: 60%;
     margin:-2% auto;
     padding: 2%;
     border-radius: 30px 10px;
-    background-color: rgba(77, 182, 172,0.7);
+   background: turquoise; 
+    background: -webkit-linear-gradient(left top,  teal,rgba(64,224,208, 0.7)); 
+    background: -o-linear-gradient(bottom right,  teal, rgba(64,224,208, 0.7)); 
+    background: -moz-linear-gradient(bottom right teal, rgba(64,224,208,0.7 )); 
+    background: linear-gradient(to bottom right,  teal, rgba(64,224,208 , 0.7));
     border-left: 10px solid #ffa500
 }
 #returnuser{
     margin: 67px auto;
 }
 #userdelete{
-    transform: translate(54px, -78px);
+    transform: translate(69px, -92px);
 }
